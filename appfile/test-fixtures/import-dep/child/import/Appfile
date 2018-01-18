@@ -1,0 +1,6 @@
+project {
+    name = "bar"
+    infrastructure = "aws"
+}
+
+infrastructure "aws" {}

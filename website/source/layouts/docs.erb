@@ -1,0 +1,198 @@
+<% wrap_layout :inner do %>
+	<% content_for :sidebar do %>
+		<div class="docs-sidebar hidden-print affix-top" role="complementary">
+			<ul class="nav docs-sidenav">
+				<li<%= sidebar_current("docs-home") %>>
+					<a href="/docs/index.html">Documentation Home</a>
+				</li>
+
+				<li<%= sidebar_current("docs-install") %>>
+					<a href="/docs/install/index.html">Installation</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-install-bc") %>>
+							<a href="/docs/install/backwards-compatibility.html">Backwards Compatibility</a>
+						</li>
+
+						<li<%= sidebar_current("docs-install-upgrade") %>>
+							<a href="/docs/install/upgrade.html">Upgrading</a>
+						</li>
+
+						<li<%= sidebar_current("docs-install-uninstall") %>>
+							<a href="/docs/install/uninstall.html">Uninstallation</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-concepts") %>>
+					<a href="/docs/concepts/index.html">Basic Concepts</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-concepts-appfile") %>>
+							<a href="/docs/concepts/appfile.html">Appfile</a>
+						</li>
+
+						<li<%= sidebar_current("docs-concepts-compile") %>>
+							<a href="/docs/concepts/compile.html">Compilation</a>
+						</li>
+
+						<li<%= sidebar_current("docs-concepts-deps") %>>
+							<a href="/docs/concepts/deps.html">Dependencies</a>
+						</li>
+
+						<li<%= sidebar_current("docs-concepts-foundations") %>>
+							<a href="/docs/concepts/foundations.html">Foundations</a>
+						</li>
+
+						<li<%= sidebar_current("docs-concepts-directory") %>>
+							<a href="/docs/concepts/directory.html">Directory</a>
+						</li>
+
+						<li<%= sidebar_current("docs-concepts-collab") %>>
+							<a href="/docs/concepts/collaboration.html">Collaboration</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-appfile") %>>
+					<a href="/docs/appfile/index.html">Appfile</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-appfile-detect") %>>
+							<a href="/docs/appfile/detect.html">Detection</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-syntax") %>>
+							<a href="/docs/appfile/syntax.html">Syntax</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-app") %>>
+							<a href="/docs/appfile/app.html">Application</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-project") %>>
+							<a href="/docs/appfile/project.html">Project</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-infra") %>>
+							<a href="/docs/appfile/infra.html">Infrastructure</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-custom") %>>
+							<a href="/docs/appfile/customization.html">Customization</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-import") %>>
+							<a href="/docs/appfile/import.html">Import</a>
+						</li>
+
+						<li<%= sidebar_current("docs-appfile-depsources") %>>
+							<a href="/docs/appfile/dep-sources.html">Dependency Sources</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-commands") %>>
+					<a href="/docs/commands/index.html">Commands (CLI)</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-commands-build") %>>
+							<a href="/docs/commands/build.html">build</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-compile") %>>
+							<a href="/docs/commands/compile.html">compile</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-deploy") %>>
+							<a href="/docs/commands/deploy.html">deploy</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-dev") %>>
+							<a href="/docs/commands/dev.html">dev</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-infra") %>>
+							<a href="/docs/commands/infra.html">infra</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-status") %>>
+							<a href="/docs/commands/status.html">status</a>
+						</li>
+						<li<%= sidebar_current("docs-commands-version") %>>
+							<a href="/docs/commands/version.html">version</a>
+						</li>
+					</ul>
+				</li>
+
+				<hr>
+
+				<li<%= sidebar_current("docs-apps") %>>
+					<a href="/docs/apps/index.html">App Types</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-java-go") %>>
+							<a href="/docs/apps/java/index.html">Java</a>
+						</li>
+						<li<%= sidebar_current("docs-apps-dockerext") %>>
+							<a href="/docs/apps/docker-external/index.html">Docker (external)</a>
+						</li>
+						<li<%= sidebar_current("docs-apps-go") %>>
+							<a href="/docs/apps/go/index.html">Go</a>
+						</li>
+						<li<%= sidebar_current("docs-apps-php") %>>
+							<a href="/docs/apps/php/index.html">PHP</a>
+						</li>
+						<li<%= sidebar_current("docs-apps-node") %>>
+							<a href="/docs/apps/node/index.html">Node.JS</a>
+						</li>
+						<li<%= sidebar_current("docs-apps-ruby") %>>
+							<a href="/docs/apps/ruby/index.html">Ruby</a>
+						</li>
+                        <li<%= sidebar_current("docs-apps-python") %>>
+                            <a href="/docs/apps/python/index.html">Python</a>
+                        </li>
+						<li<%= sidebar_current("docs-apps-custom") %>>
+							<a href="/docs/apps/custom/index.html">Custom</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-infra") %>>
+					<a href="/docs/infra/index.html">Infra Types</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-infra-aws") %>>
+							<a href="/docs/infra/aws.html">AWS</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-foundations") %>>
+					<a href="/docs/foundations/index.html">Foundation Types</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-foundations-consul") %>>
+							<a href="/docs/foundations/consul.html">Consul</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("docs-directory") %>>
+					<a href="/docs/directory/index.html">Directory Backends</a>
+				</li>
+
+				<li<%= sidebar_current("docs-plugins") %>>
+					<a href="/docs/plugins/index.html">Plugins</a>
+					<ul class="nav">
+						<li<%= sidebar_current("docs-plugins-install") %>>
+							<a href="/docs/plugins/install.html">Install</a>
+						</li>
+
+						<li<%= sidebar_current("docs-plugins-basics") %>>
+							<a href="/docs/plugins/basics.html">Basics</a>
+						</li>
+
+						<li<%= sidebar_current("docs-plugins-app") %>>
+							<a href="/docs/plugins/app.html">Apps</a>
+						</li>
+
+						<li<%= sidebar_current("docs-plugins-scriptpack") %>>
+							<a href="/docs/plugins/scriptpack.html">ScriptPacks</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<% end %>
+
+	<%= yield %>
+<% end %>

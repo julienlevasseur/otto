@@ -1,0 +1,6 @@
+import "./import" {}
+
+application {
+    name = "child"
+    type = "bar"
+}

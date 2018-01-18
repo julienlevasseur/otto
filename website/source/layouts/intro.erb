@@ -1,0 +1,91 @@
+<% wrap_layout :inner do %>
+	<% content_for :sidebar do %>
+		<div class="docs-sidebar hidden-print affix-top" role="complementary">
+			<ul class="nav docs-sidenav">
+				<li<%= sidebar_current("what") %>>
+					<a href="/intro/index.html">What is Otto?</a>
+				</li>
+
+				<li<%= sidebar_current("vagrant") %>>
+					<a href="/intro/vagrant-successor.html">The Successor to Vagrant</a>
+				</li>
+
+				<li<%= sidebar_current("vs-other") %>>
+					<a href="/intro/vs/index.html">Otto vs. Other Software</a>
+					<ul class="nav">
+						<li<%= sidebar_current("vs-other-vagrant") %>>
+							<a href="/intro/vs/vagrant.html">Vagrant</a>
+						</li>
+
+						<li<%= sidebar_current("vs-other-docker") %>>
+							<a href="/intro/vs/docker.html">Docker</a>
+						</li>
+
+						<li<%= sidebar_current("vs-other-mamp") %>>
+							<a href="/intro/vs/mamp.html">MAMP, XAMPP, etc.</a>
+						</li>
+
+						<li<%= sidebar_current("vs-other-heroku") %>>
+							<a href="/intro/vs/heroku.html">Heroku</a>
+						</li>
+
+						<li<%= sidebar_current("vs-other-terraform") %>>
+							<a href="/intro/vs/terraform.html">Terraform</a>
+						</li>
+
+						<li<%= sidebar_current("vs-other-custom") %>>
+							<a href="/intro/vs/custom.html">Custom Solutions</a>
+						</li>
+					</ul>
+				</li>
+
+				<li<%= sidebar_current("gettingstarted") %>>
+					<a href="/intro/getting-started/install.html">Getting Started</a>
+					<ul class="nav">
+						<li<%= sidebar_current("gettingstarted-install") %>>
+							<a href="/intro/getting-started/install.html">Install Otto</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-dev") %>>
+							<a href="/intro/getting-started/dev.html">Develop</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-infra") %>>
+							<a href="/intro/getting-started/infra.html">Infrastructure</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-build") %>>
+							<a href="/intro/getting-started/build.html">Build</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-deploy") %>>
+							<a href="/intro/getting-started/deploy.html">Deploy</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-appfile") %>>
+							<a href="/intro/getting-started/appfile.html">Appfile</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-customization") %>>
+							<a href="/intro/getting-started/customization.html">Customization</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-deps") %>>
+							<a href="/intro/getting-started/deps.html">Dependencies</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-teardown") %>>
+							<a href="/intro/getting-started/teardown.html">Teardown</a>
+						</li>
+
+						<li<%= sidebar_current("gettingstarted-nextsteps") %>>
+							<a href="/intro/getting-started/next-steps.html">Next Steps</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<% end %>
+
+	<%= yield %>
+<% end %>
